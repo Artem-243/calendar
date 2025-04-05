@@ -1,0 +1,30 @@
+.calendar {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.calendar-weekdays, 
+.calendar-numbers {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.calendar-empty-day {
+    visibility: hidden; /* Невидимые ячейки для выравнивания */
+}
+
+.calendar-day {
+    padding: 8px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    cursor: pointer;
+    min-width: 30px;
+}
+
+.calendar-day:hover {
+    background: #5e0707;
+    color: rgb(0, 0, 0);
+}
